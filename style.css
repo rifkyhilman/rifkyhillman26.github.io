@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: red;
+    color: white;
     margin-right: 20px;
 }
 
@@ -53,8 +53,8 @@ body {
 
 #article-list {
     /* background: #2F4F4F; */
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
     color: white;
 }
 
