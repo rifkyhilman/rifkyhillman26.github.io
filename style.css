@@ -14,7 +14,7 @@ section h1 {
 }
 
 section {
-    margin-top: 75px;
+    margin-top: 200px;
 }
 
 section img {
@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: yellow;
+    color:thistle;
     margin-right: 20px;
 }
 
@@ -93,14 +93,14 @@ footer {
 
 .social-media {
     display: flex;
-    margin: 0px;
+    justify-content: center;
+    vertical-align: 200px;
 }
 
 .social-media img {
     width: 30px;
     height: 30px;
     display: flex;
-    align-items: flex-end;
     margin-top: -10px;
 }
 
