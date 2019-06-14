@@ -95,8 +95,8 @@ footer {
 }
 
 .social-media {
-    flex-basis: 200px;
     display: flex;
+    width: 170px;
     margin: 50px auto;
     flex-direction: column;
 }
