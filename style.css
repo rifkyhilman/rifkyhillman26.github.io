@@ -14,7 +14,7 @@ section h1 {
 }
 
 section {
-    margin-top: 200px;
+    margin-top: 20%;
 }
 
 section img {
@@ -53,6 +53,9 @@ nav ul li a {
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background: url("11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,21 +95,27 @@ footer {
 }
 
 .social-media {
+    flex-basis: 200px;
     display: flex;
-    justify-content: center;
-    vertical-align: 200px;
+    margin: 50px auto;
+    flex-direction: column;
 }
 
-.social-media img {
+.social-media .icon-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-media .icon-social img {
     width: 30px;
     height: 30px;
-    display: flex;
-    margin-top: -10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .conten-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 80vh; */
 }
