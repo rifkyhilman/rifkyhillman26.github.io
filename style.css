@@ -6,14 +6,22 @@
 }
 
 section h1 {
-    color: yellow;
+    color: orange;
     text-align: center;
-    margin: 20px;
-    width: ;
+    margin: 15px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 section {
     margin-top: 75px;
+}
+
+section img {
+    width: 170px;
+    height: 170px;
+    border-radius: 1000px;
+    margin: 30%;
 }
 
 p {
@@ -41,18 +49,18 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: yellow;
     margin-right: 20px;
 }
 
 body {
     background: url("11.jpg");
     background-size: cover;
-    color: white;
+    background-repeat: no-repeat;
+    color:white;
 }
 
 #article-list {
-    /* background: #2F4F4F; */
     margin-left: 20%;
     margin-right: 20%;
     color: white;
@@ -72,8 +80,8 @@ article:last-child {
 }
 
 article a h3 {
-    color: yellow;
-    margin-bottom: 10px;
+    color: black;
+    margin-bottom: 8px
 }
 
 footer h5 {
@@ -83,3 +91,17 @@ footer h5 {
 footer {
     padding: 50px;
 }
+
+div img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+div img:last-child {
+    height: 30px;
+    width: 30px;
+}
+
