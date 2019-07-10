@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucky Dadu</title>
+    <style>
+        * {
+            background: darkgray;
+        }
+        img {
+            border-radius: 30px;
+        }
+        /* tulis style disini*/
+    </style>
+</head>
+<body>
+    <h1 id="hasil">klik dadu untuk memulai kocokan !</h1>
+    <div id="app">
+    </div>
+    <!--html kode disini -->
+    <script>
+        var text = document.createElement('p');
+        var img = document.createElement('img');
+        var acak = document.getElementById('app')
+        var computer = 0
+        var you = 0
+
+        
+        img.setAttribute('src', 'dadu.png')
+        img.setAttribute('width', '200')
+        img.setAttribute('height', '200')
+        
+        acak.appendChild(text)
+        acak.appendChild(img)
+
+        img.addEventListener('click', function() {
+            computer = Math.ceil(Math.random()*6)
+            img.setAttribute('src','dadu-gerak.gif')
+            setTimeout(function(){ 
+                you = Math.ceil(Math.random()*6)
+                img.setAttribute('src','dadu.png');
+                
+                console.log(document.getElementsByTagName('p')[0])
+
+                if (computer === you) {
+                    document.getElementsByTagName('p')[0].innerHTML ='tabakan komputer ' + computer  +' tebakan kamu ' + you + ' maka benar'
+                }else {
+                    document.getElementsByTagName('p')[0].innerHTML ='tabakan komputer ' + computer + ' tebakan kamu ' + you + ' maka salah'
+                }
+            }, 2000);
+    })
+
+
+        // Tulis Kode javascript disini
+    </script>
+</body>
+</html>
