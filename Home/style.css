@@ -6,9 +6,9 @@
 }
 
 section h1 {
-    color: orange;
+    color: whitesmoke;
     text-align: center;
-    margin: 15px;
+    margin-bottom: 70px;
     font-size: 40px;
     font-family:'Times New Roman', Times, serif;
 }
@@ -29,16 +29,17 @@ p {
 }
 
 nav img {
-    width: 100px;
-    height: 50px;
+    margin-top: 8px;
+    margin-left: 30px;
+    width: 65px;
+    height: 60px;
 }
 nav {
     display: flex;
-    background: #696969;
+    background:N/A transparent;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
-    top: 0px;
+    height: 70px;
 }
 
 nav ul {
@@ -48,19 +49,19 @@ nav ul {
 }
 
 nav ul li a {
-    color:thistle;
+    color:white;
     margin-right: 20px;
 }
 
 nav ul li a:hover {
-    color:seashell;
+    color:blue;
 }
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: url("11.jpg");
+    background: url("/Gambar/11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color:white;

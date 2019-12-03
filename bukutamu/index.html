@@ -3,54 +3,68 @@
 
     <head>
         <title>BUKU TAMU</title>
+        <style>
+            .body {
+                display: flex;
+                justify-content: center;
+            }
+
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .tombol {
+                background-color: green;
+                color: whitesmoke;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .tombol:hover {
+                color: yellowgreen;
+            }
+
+            #bungkus {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+            }
+        </style>
     </head>
-    <style>
-        * {
-            background:darkgray;
-        }
-        img {
-            display: flex;
-            justify-items: center;
-        }
-        h1 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            color: black;
-        }
-        h2 {
-            color: black;
-        }
-        #name {
-            background: white;
-        }
-        #tahun {
-            background: white;
-        }
-    </style>
+
     <body>
         <h1>TEST UMUR MU SEKARANG !</h1>
         <br>
-        <form onsubmit="submitForm()">
-            <label>
-                <h2> Nama : </h2>
-                <input type="text" id="name">
-            </label>
-            <br>
-            <label>
-                <h2> Tahun lahir : </h2>
-                <input type="number" id='tahun'>
-            </label>
-            <br><br>
-            <button type="submit">Cek Umur</button>
-        </form>
-        <img src="animasi-bergerak-menari-0473.gif">
+        <div class="body">
+            <form onsubmit="submitForm()">
+                <label>
+                    <h2> Nama </h2>
+                    <input type="text" id="name">
+                </label>
+                <br>
+                <label>
+                    <h2> Tahun lahir </h2>
+                    <input type="number" id='tahun'>
+                </label>
+                <div id="bungkus">
+                    <button class="tombol" type="submit">Cek Umur</button>
+                </div>
+            </form>
+        </div>
         <script>
             function submitForm() {
                 var name = document.getElementById('name').value;
                 var Tahun = document.getElementById('Tahun').value;
-                
-                
+
+
                 alert("Halo " + name + ",sekarang kamu" + (2019 - Tahun) + " tahun")
             }
         </script>
