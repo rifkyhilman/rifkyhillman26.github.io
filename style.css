@@ -61,7 +61,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background: url("/Gambar/11.jpg");
+    background: url("./img/11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
