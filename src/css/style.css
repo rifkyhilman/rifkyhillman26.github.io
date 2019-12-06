@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+
+  .header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #212121 ;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  } 
+
+  .content {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 130px;
+    height: 130px;
+    border-radius: 60px;
+  }
+
+  body {
+      margin: 0;
+    }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  #Nama h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  #Nama h4 {
+    display: flex;
+    justify-content: center;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    font-family: monospace;
+    font-size: initial;
+  }
