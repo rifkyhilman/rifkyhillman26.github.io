@@ -105,17 +105,19 @@
 
   .bio p {
     margin-top: 20px;
+    font-family: 'Sulphur Point', sans-serif;
   }
 
   .bio img {
     margin-top: 55px;
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
   }
 
   .card {
     background-color: #e0e0e0 ;
     width: 105%;
+    height: 50%;
   }
   
   .tulisan {
