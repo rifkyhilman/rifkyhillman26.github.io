@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Battle Suit</title>
-    <style type = "text/css">
+    <style type="text/css">
         /*tulis style disini*/
-        
+
         * {
             background: slateblue;
         }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            border: 10px solid transparent;
+            padding: 80px;
+            border-image: url(https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80) 50 round;
+        }
+
         #tampilan {
             display: flex;
             justify-content: center;
-            padding-top: 50px;
         }
+
         p {
             font-family: Arial, Helvetica, sans-serif;
             padding-bottom: 20px;
-            padding-left: 25px; 
+            padding-left: 25px;
             color: aliceblue;
         }
+
         #computer {
             height: 100px;
         }
+
         #you {
             height: 100px;
         }
+
         #vs {
             height: 50px;
             padding-top: 40px;
         }
+
         #suit {
             display: flex;
             justify-content: center;
@@ -42,60 +57,91 @@
         #suit img {
             width: 55px;
         }
+
         .box {
             margin: 20px;
         }
+
+        .button1 {
+            background-color: #4CAF50;
+            border: 2px solid #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .button1:hover {
+            background-color: transparent;
+            color: white;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1 a {
+            text-decoration: none;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
     </style>
 </head>
+
 <body>
-    <div id ="tampilan">
-        <div class="box">
-            <img id="computer" src="tanya.png">
-            <p>{Komputer}</p>
+    <div class="container">
+        <div id="tampilan">
+            <div class="box">
+                <img id="computer" src="./img/tanya.png">
+                <p>{Komputer}</p>
+            </div>
+            <div class="box">
+                <img id="vs" src="./img/vs.png">
+            </div>
+            <div class="box">
+                <img id="you" src="./img/tanya.png">
+                <p>{Kamu}</p>
+            </div>
         </div>
-        <div class="box">
-            <img id="vs" src="vs.png">
+        <div id="suit">
+            <img src="./img/batu.png" onclick="pilihansaya('./img/batu.png')">
+            <img src="./img/gunting.png" onclick="pilihansaya('./img/gunting.png')">
+            <img src="./img/kertas.png" onclick="pilihansaya('./img/kertas.png')">
         </div>
-        <div class="box">
-            <img id="you" src="tanya.png">
-            <p>{Kamu}</p>
+        <div class="button">
+            <a href="/src/index.html"><button class="button1"> Back to Home </button></a>
         </div>
-    </div>
-    <div id ="suit">
-        <img src ="batu.png" onclick="pilihansaya('batu.png')">
-        <img src ="gunting.png" onclick="pilihansaya('gunting.png')">
-        <img src ="kertas.png" onclick="pilihansaya('kertas.png  img.setAttribute('src', 'dadu.png')as.png')">
     </div>
     <script>
-        var suit = ['batu.png', 'gunting.png', 'kertas.png']
+        var suit = ['./img/batu.png', './img/gunting.png', './img/kertas.png']
         var musuh = document.getElementById('computer')
         var saya = document.getElementById('you')
-        
 
-        function pilihansaya(string){
-            var random = Math.round (Math.random() * (suit.length -1))
+
+        function pilihansaya(string) {
+            var random = Math.round(Math.random() * (suit.length - 1))
             var pilihanmusuh = suit[random]
             var hasil = ''
             musuh.setAttribute('src', pilihanmusuh)
             saya.setAttribute('src', string)
 
-            if (pilihanmusuh === string){
-                hasil = 'seri'
-            }else if (pilihanmusuh === 'batu.png' && string === 'gunting.png'){
-                hasil = 'kalah'
-            }else if (pilihanmusuh === 'gunting.png' && string === 'kertas.png'){
-                hasil = 'kalah'
-            }else if (pilihanmusuh === 'kertas.png' && string === 'batu.png'){
-                hasil = 'kalah'
-            }else if (pilihanmusuh === 'gunting.png' && string === 'batu.png'){
+            if (pilihanmusuh === string) {
+                hasil = 'Seri'
+            } else if (pilihanmusuh === './img/batu.png' && string === './img/gunting.png') {
+                hasil = 'kalah !!'
+            } else if (pilihanmusuh === './img/gunting.png' && string === './img/kertas.png') {
+                hasil = 'kalah !!'
+            } else if (pilihanmusuh === './img/kertas.png' && string === './img/batu.png') {
+                hasil = 'kalah !!'
+            } else if (pilihanmusuh === './img/gunting.png' && string === './img/batu.png') {
                 hasil = 'menang'
-            }else if (pilihanmusuh === 'kertas.png' && string === 'gunting.png'){
+            } else if (pilihanmusuh === './img/kertas.png' && string === './img/gunting.png') {
                 hasil = 'menang'
-            }else if (pilihanmusuh === 'batu.png' && string === 'kertas.png'){
+            } else if (pilihanmusuh === './img/batu.png' && string === './img/kertas.png') {
                 hasil = 'menang'
             }
 
-            setTimeout(function(){ alert(hasil); }, 500);
+            setTimeout(function () { alert(hasil); }, 500);
         }
         // Tulis Kode javascript disini
     </script>

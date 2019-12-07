@@ -5,9 +5,7 @@
 
   .header {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
+    width: 20%;
     background-color: #212121 ;
     position: fixed;
     height: 100%;
@@ -15,8 +13,7 @@
   } 
 
   .container {
-    background-color: #f5f5f5;
-    margin-left:23%;
+    margin-left:18%;
     padding:1px 16px;
     height:100%;
     width: auto;
@@ -38,7 +35,13 @@
       margin: 0;
     }
   
+  ul {
+    margin-left: -50px;
+    list-style-type: none;
+  }
+
   li a {
+    font-size: 18px;
     display: block;
     color: white;
     padding: 8px 16px;
@@ -48,7 +51,6 @@
 
   li a img {
     margin-bottom: -10px;
-    margin-left: 40px;
   }
 
   li a.active {
@@ -81,36 +83,41 @@
     display: flex;
     justify-content: center;
     color: #e0e0e0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-family: monospace;
-    font-size: initial;
+    font-size: 15px;
   }
 
   .bio {
     display: flex;
     justify-content: center;
-    padding: 20px 20px;
-    background-color:#eeeeee;
+    width: 800px;
+    margin: 0 auto;
+    padding: 15px 15px;
   }
 
   .bio h1 {
-    margin-top: -1px;
     color: #757575;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid #bdbdbd;
     font-size: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .bio p {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .bio img {
-    display: block;
-    height: 30%;
-    width: 30%;
+    margin-top: 55px;
+    height: 40%;
+    width: 40%;
+  }
+
+  .card {
+    background-color: #e0e0e0 ;
+    width: 105%;
   }
   
   .tulisan {
-    margin-left: 50px;
+    margin-left: 40px;
   }
