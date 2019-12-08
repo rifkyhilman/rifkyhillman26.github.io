@@ -73,17 +73,22 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
     color: #e0e0e0;
     font-size: 25px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gupter', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Cinzel', serif;
   }
 
   #Nama h4 {
     display: flex;
     justify-content: center;
     color: #e0e0e0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-family: monospace;
     font-size: 15px;
   }
@@ -105,19 +110,56 @@
 
   .bio p {
     margin-top: 20px;
-    font-family: 'Sulphur Point', sans-serif;
+    font-size: 20px;
+    color: #bdbdbd;
+    font-family: 'Gupter', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gochi Hand', cursive;
   }
 
-  .bio img {
-    margin-top: 55px;
-    height: 50%;
-    width: 50%;
+  .image {
+    height: 350px;
+    width: 270%;
+    margin-top: 50px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #aaa;
+    background-image: url("/img/Rifky3.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+
+  .image h2 {
+    position: relative;
+  }
+
+  .image h4 {
+      position: relative;
+  }
+
+  .image h2 {
+    margin-top: 135px;
+    margin-bottom: -10px;
+    font-size: 35px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 43%;
+    margin-top: 60%;
+    background-color: black;
+    opacity: 0.4;
   }
 
   .card {
     background-color: #e0e0e0 ;
     width: 105%;
-    height: 50%;
+    height: 80%;
   }
   
   .tulisan {
