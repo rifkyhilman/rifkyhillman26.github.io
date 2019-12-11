@@ -108,18 +108,16 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
-  .bio p {
+  .tulisan h4 {
     margin-top: 20px;
-    font-size: 20px;
-    color: #bdbdbd;
-    font-family: 'Gupter', serif;
-    font-family: 'Permanent Marker', cursive;
-    font-family: 'Gochi Hand', cursive;
+    font-size: 18px;
+    color: #616161 ;
+    font-family: serif;
   }
 
   .image {
     height: 350px;
-    width: 270%;
+    width: 290%;
     margin-top: 50px;
     padding: 80px 40px;
     box-sizing: border-box;
@@ -133,16 +131,13 @@
 
   .image h2 {
     position: relative;
-  }
-
-  .image h4 {
-      position: relative;
-  }
-
-  .image h2 {
     margin-top: 135px;
     margin-bottom: -10px;
     font-size: 35px;
+  }
+
+  .image p {
+    position: relative;
   }
   
   .overlay {
@@ -150,8 +145,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 43%;
-    margin-top: 60%;
+    height: 165px;
+    margin-top: 58%;
     background-color: black;
     opacity: 0.4;
   }
