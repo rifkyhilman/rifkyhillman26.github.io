@@ -16,7 +16,7 @@
     margin-left:18%;
     padding:1px 16px;
     height:100%;
-    width: auto;
+    width: auto; 
   }
 
   .foto img {
@@ -102,14 +102,19 @@
   }
 
   .bio h1 {
+    padding-bottom: 8px;
     color: #757575;
     border-bottom: 2px solid #bdbdbd;
-    font-size: 70px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman';
+    margin-top: 50px;
+  }
+  
+  .tulisan {
+    margin-left: 40px;
   }
 
   .tulisan h4 {
-    margin-top: 20px;
     font-size: 18px;
     color: #616161 ;
     font-family: serif;
@@ -133,11 +138,13 @@
     position: relative;
     margin-top: 135px;
     margin-bottom: -10px;
-    font-size: 35px;
+    font-size: 30px;
+    color: #e0e0e0;
   }
 
   .image p {
     position: relative;
+    color: #e0e0e0;
   }
   
   .overlay {
@@ -154,9 +161,31 @@
   .card {
     background-color: #e0e0e0 ;
     width: 105%;
-    height: 80%;
+    height: 75vh;
   }
   
-  .tulisan {
-    margin-left: 40px;
+  .card1 {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 15px 15px;
   }
+
+  .hobi {
+    height: 50vh;
+    margin-left: 110px;
+    width: 95%;
+    background-color: red;
+    margin-top: 100px;
+  }
+
+  .hobi img {
+    height: 130%;
+    width: 70%;
+  }
+
+  .tulisan1 {
+    margin-left: 10px;
+  }
+  
