@@ -2,166 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Gupter|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Bebas+Neue|Bree+Serif|Cinzel|Gochi+Hand|Gupter|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
     <title>Battle Suit</title>
-    <style type="text/css">
-        /*tulis style disini*/
-
-        * {
-            background: slateblue;
-        }
-
-        .container {
-            width: 800px;
-            margin: 0 auto;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            border: 10px solid transparent;
-            padding: 80px;
-            border-image: url(https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80) 50 round;
-        }
-
-        .judul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            margin-bottom: 100px;
-        }
-
-        #tampilan {
-            display: flex;
-            justify-content: center;
-        }
-
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            padding-bottom: 20px;
-            padding-left: 25px;
-            color: aliceblue;
-        }
-
-        #computer {
-            height: 100px;
-        }
-
-        #you {
-            height: 100px;
-        }
-
-        #vs {
-            height: 50px;
-            padding-top: 40px;
-        }
-
-        #suit {
-            display: flex;
-            justify-content: center;
-            height: 60px;
-        }
-
-        #suit img {
-            width: 55px;
-        }
-
-        .box {
-            margin: 20px;
-        }
-
-        .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 70px;
-        }
-
-        .btn a {
-            position: relative;
-            display: inline-block;
-            padding: 15px 30px;
-            color: #76ff03;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            text-decoration: none;
-            font-size: 24px;
-            overflow: hidden;
-            transition: 0.2s;
-        }
-
-
-        .btn a:hover {
-            color: slateblue;
-            background-color: #76ff03;
-            box-shadow: 0 0 10px #76ff03, 0 0 30px #76ff03, 0 0 60px #76ff03;
-            transition-delay: 1s;
-        }
-
-        .btn a span {
-            position: absolute;
-            display: block;
-        }
-
-        .btn a span:nth-child(1) {
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #76ff03);
-        }
-
-        .btn a:hover span:nth-child(1) {
-            left: 100%;
-            transition: 1s;
-        }
-
-        .btn a span:nth-child(3) {
-            bottom: 0;
-            right: -100%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(270deg, transparent, #76ff03);
-        }
-
-        .btn a:hover span:nth-child(3) {
-            right: 100%;
-            transition: 1s;
-            transition-delay: 0.5s;
-        }
-
-        .btn a span:nth-child(2) {
-            top: -100%;
-            right: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, transparent, #76ff03);
-        }
-
-        .btn a:hover span:nth-child(2) {
-            top: 100%;
-            transition: 1s;
-            transition-delay: 0.25s;
-        }
-
-        .btn a span:nth-child(4) {
-            bottom: -100%;
-            left: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(360deg, transparent, #76ff03);
-        }
-
-        .btn a:hover span:nth-child(4) {
-            bottom: 100%;
-            transition: 1s;
-            transition-delay: 0.75s;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="header">
+        <div class="foto">
+            <img src="/img/rifky.jpeg" />
+        </div>
+        <div id="Nama">
+            <h3>
+                M Rifky hilman
+            </h3>
+            <h4>
+                Web Developer
+            </h4>
+        </div>
+        <ul>
+            <li>
+                <a href="/index.html"><img src="/img/man.png" />About Me</a>
+            </li>
+            <li>
+                <a href="/src/pages/gamesuit/index.html"><img src="/img/gamepad.png" />Mini Game</a>
+            </li>
+            <li>
+                <a href="/src/pages/bukutamu/index.html"><img src="/img/calendar.png" /> Event</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body">
         <div class="judul">
             <h1>Rock Paper Scissors</h1>
         </div>
@@ -182,15 +58,6 @@
             <img src="./img/batu.png" onclick="pilihansaya('./img/batu.png')">
             <img src="./img/gunting.png" onclick="pilihansaya('./img/gunting.png')">
             <img src="./img/kertas.png" onclick="pilihansaya('./img/kertas.png')">
-        </div>
-        <div class="btn">
-            <a href="/index.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Back To Home
-            </a>
         </div>
     </div>
     <script>

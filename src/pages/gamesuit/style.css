@@ -1,0 +1,138 @@
+
+
+.body {
+    margin-left: 230px;
+}
+        
+.header {
+    list-style-type: none;
+    width: 20%;
+    background-color: #212121 ;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  } 
+
+.foto img {
+    width: 130px;
+    height: 130px;
+    border-radius: 70px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    margin-left: -50px;
+    list-style-type: none;
+}
+
+li a {
+    font-size: 18px;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+li a img {
+    margin-bottom: -10px;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#Nama h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: -5px;
+    color: #e0e0e0;
+    font-size: 25px;
+    font-family: 'Gupter', serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gochi Hand', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Cinzel', serif;
+}
+
+#Nama h4 {
+    display: flex;
+    justify-content: center;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+    font-family: monospace;
+    font-size: 15px;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 10px solid transparent;
+    padding: 80px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+#tampilan {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    color: aliceblue;
+}
+
+#computer {
+    height: 100px;
+}
+
+#you {
+    height: 100px;
+}
+
+#vs {
+    height: 50px;
+    padding-top: 40px;
+}
+
+#suit {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+#suit img {
+    width: 55px;
+}
+
+.box {
+    margin: 20px;
+}
+
+.box p {
+    color: black;
+}
+

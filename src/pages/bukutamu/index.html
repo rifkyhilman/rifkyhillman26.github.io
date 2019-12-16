@@ -1,169 +1,44 @@
-<DOCTYPE!>
-    <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <title> Cek umur segera </title>
-        <style>
-            body {
-                height: 60vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                font-family: sans-serif;
-            }
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Gupter|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Bebas+Neue|Bree+Serif|Cinzel|Gochi+Hand|Gupter|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rifky_hilman</title>
+</head>
 
-            .container {
-                margin-left: 15%;
-            }
-
-            .form {
-                width: 80%;
-                position: relative;
-                height: 50px;
-                overflow: hidden;
-                margin-top: 30px;
-            }
-
-            .form input {
-                width: 100%;
-                height: 100%;
-                color: black;
-                padding-top: 20px;
-                border: none;
-                outline: none;
-            }
-
-            .form label {
-                position: absolute;
-                bottom: 0px;
-                left: 0%;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-                border-bottom: 2px solid black;
-            }
-
-            .form label::after {
-                content: "";
-                position: absolute;
-                left: 0px;
-                bottom: -1px;
-                height: 100%;
-                width: 100%;
-                border-bottom: 2px solid blue;
-                transform: translateX(-100%);
-                transition: transform 0.3s ease;
-            }
-
-            .content-name {
-                position: absolute;
-                bottom: 5px;
-                left: 0px;
-                transition: all 0.3s ease;
-            }
-
-            .form input:focus+.label-name .content-name,
-            .form input:valid+.label-name .content-name {
-                transform: translateY(-150%);
-                font-size: 14px;
-                color: blue;
-            }
-
-            .form input:focus+.label-name::after,
-            .form input:valid+.label-name::after {
-                transform: translateX(0%);
-            }
-
-            #btn a {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-top: 150px;
-                transform: translate(-50%, -50%);
-                width: 180px;
-                height: 50px;
-                background: #262626;
-                text-transform: uppercase;
-                text-align: center;
-                line-height: 50px;
-                color: white;
-                text-decoration: none;
-                font-size: 20px;
-                font-family: Verdana;
-                letter-spacing: 4px;
-            }
-
-            #btn a:hover {
-                color: green;
-            }
-
-            a::before,
-            a::after,
-            span::before,
-            span::after {
-                content: '';
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background: white;
-                transition: 1s;
-                mix-blend-mode: hue;
-            }
-
-            a::before {
-                top: -2px;
-                left: -2px;
-            }
-
-            a::after {
-                top: -2px;
-                right: -2px;
-            }
-
-            span::before {
-                bottom: -2px;
-                left: -2px;
-            }
-
-            span::after {
-                bottom: -2px;
-                right: -2px;
-            }
-
-
-            a:hover:before,
-            a:hover:after,
-            a:hover span::before,
-            a:hover span::after {
-                width: calc(180px / 2);
-                height: calc(50px / 2);
-            }
-
-            .tombol {
-                display: flex;
-                justify-content: center;
-                margin-top: 30px;
-            }
-
-            .btn2 {
-                color: black;
-                padding: 15px 20px;
-                border: 2px solid black;
-                font-size: 15px;
-                background-color: transparent;
-            }
-
-            .btn2:hover {
-                border: blue solid 2px;
-                color: blue;
-            }
-        </style>
-    </head>
-
-    <body>
+<body>
+    <div class="header">
+        <div class="foto">
+            <img src="/img/rifky.jpeg" />
+        </div>
+        <div id="Nama">
+            <h3>
+                M Rifky hilman
+            </h3>
+            <h4>
+                Web Developer
+            </h4>
+        </div>
+        <ul>
+            <li>
+                <a href="/index.html"><img src="/img/man.png" />About Me</a>
+            </li>
+            <li>
+                <a href="/src/pages/gamesuit/index.html"><img src="/img/gamepad.png" />Mini Game</a>
+            </li>
+            <li>
+                <a href="/src/pages/bukutamu/index.html"><img src="/img/calendar.png" /> Event</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body">
         <h1>TEST UMUR MU SEKARANG !</h1>
-
         <form onsubmit="submitForm()">
             <div class="container">
                 <div class="form">
@@ -183,19 +58,17 @@
                 <button type="submit" class="btn2">Cek umur</button>
             </div>
         </form>
-        <div id="btn">
-            <a href="/index.html"><span></span> Home </a>
-        </div>
-        <script>
-            function submitForm() {
-                var name = document.getElementById('nama').value;
-                var tahun = document.getElementById('tahun').value;
-                var Dates = new Date()
-                var Date_years = Dates.getFullYear()
+    </div>
+    <script>
+        function submitForm() {
+            var name = document.getElementById('nama').value;
+            var tahun = document.getElementById('tahun').value;
+            var Dates = new Date()
+            var Date_years = Dates.getFullYear()
 
-                alert("Halo " + name + ",sekarang kamu " + (Date_years - tahun) + " Tahun");
-            }
-        </script>
-    </body>
+            alert("Halo " + name + ",sekarang kamu " + (Date_years - tahun) + " Tahun");
+        }
+    </script>
+</body>
 
-    </html>
+</html>
