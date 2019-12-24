@@ -171,8 +171,9 @@ a img {
 }
 
 .btn2:hover {
-    border: blue solid 2px;
-    color: blue;
+    border: whitesmoke solid 2px;
+    color: whitesmoke;
+    background-color: black;
 }
 
 .container {
