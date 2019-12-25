@@ -208,3 +208,9 @@
   .makanan {
     margin-top: 20%;
   }
+
+  .footers {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+  }
