@@ -209,6 +209,41 @@
     margin-top: 20%;
   }
 
+  .skill {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+  }
+
+  .judul h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    font-size: 60px;
+    font-family: 'Stoke', serif;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 40%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
   .footers {
     display: flex;
     justify-content: center;
