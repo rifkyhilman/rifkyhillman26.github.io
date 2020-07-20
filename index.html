@@ -32,7 +32,7 @@
         <img id="gambar-tengah" src="/img/gunting.png" onclick="pilihansaya('/img/gunting.png')">
       </div>
       <div class="gambar-kanan">
-        <img src="/img/kertas.png" onclick="pilihansaya('/img/kertas.png')">
+        <img src="/img/kertas.png" onclick="pilihansaya ('/img/kertas.png')">
       </div>
     </div>
   </div>
@@ -42,6 +42,7 @@
     var suit = ['/img/batu.png', '/img/gunting.png', '/img/kertas.png']
     var musuh = document.getElementById('computer')
     var saya = document.getElementById('you')
+    var refresh = ['/img/tanya.png']
 
 
     function pilihansaya(string) {
@@ -66,8 +67,10 @@
       } else if (pilihanmusuh === '/img/batu.png' && string === '/img/kertas.png') {
         hasil = 'menang'
       }
+
       setTimeout(function () { alert(hasil); }, 500);
-      setTimeout(function () { location.replace("http://127.0.0.1:5500/index.html") }, 500);
+      setTimeout(function () { musuh.setAttribute('src', refresh) }, 500);
+      setTimeout(function () { saya.setAttribute('src', refresh) }, 500);
     }
         // Tulis Kode javascript disini
   </script>
