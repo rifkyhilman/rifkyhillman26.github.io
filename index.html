@@ -2,39 +2,76 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="/src/css/style.css" />
   <title>Rifky_hilman</title>
 </head>
 
 <body>
-  <div class="header">
-    <div class="foto">
-      <img class="logo" src="./img/rifky-hilman.jpeg" />
+  <div class="body">
+    <div class="judul">
+      <h1>Rock Paper Scissors</h1>
     </div>
-    <div id="Nama">
-      <h3>
-        M Rifky hilman
-      </h3>
-      <h4>
-        Web Developer
-      </h4>
+    <div id="tampilan">
+      <div class="box">
+        <img id="computer" src="/img/tanya.png">
+        <p>{Komputer}</p>
+      </div>
+      <div class="box">
+        <img id="vs" src="/img/vs.png">
+      </div>
+      <div class="box">
+        <img id="you" src="/img/tanya.png">
+        <p>{Kamu}</p>
+      </div>
     </div>
-
-    <!-- hasil project -->
-
-    <!-- <ul>
-      <li>
-        <a href="/index.html"><img src="/img/man.png" />About Me</a>
-      </li>
-      <li>
-        <a href="/src/pages/gamesuit/index.html"><img src="/img/gamepad.png" />Mini Game</a>
-      </li>
-      <li>
-        <a href="/src/pages/Event/index.html"><img src="/img/calendar.png" /> Event</a>
-      </li>
-    </ul> -->
-
+    <div id="suit">
+      <div class="gambar-kiri">
+        <img src="/img/batu.png" onclick="pilihansaya('/img/batu.png')">
+      </div>
+      <div class="gambar">
+        <img id="gambar-tengah" src="/img/gunting.png" onclick="pilihansaya('/img/gunting.png')">
+      </div>
+      <div class="gambar-kanan">
+        <img src="/img/kertas.png" onclick="pilihansaya('/img/kertas.png')">
+      </div>
+    </div>
   </div>
+
+
+  <script>
+    var suit = ['/img/batu.png', '/img/gunting.png', '/img/kertas.png']
+    var musuh = document.getElementById('computer')
+    var saya = document.getElementById('you')
+
+
+    function pilihansaya(string) {
+      var random = Math.round(Math.random() * (suit.length - 1))
+      var pilihanmusuh = suit[random]
+      var hasil = ''
+      musuh.setAttribute('src', pilihanmusuh)
+      saya.setAttribute('src', string)
+
+      if (pilihanmusuh === string) {
+        hasil = 'Seri'
+      } else if (pilihanmusuh === '/img/batu.png' && string === '/img/gunting.png') {
+        hasil = 'kalah !!'
+      } else if (pilihanmusuh === '/img/gunting.png' && string === '/img/kertas.png') {
+        hasil = 'kalah !!'
+      } else if (pilihanmusuh === '/img/kertas.png' && string === '/img/batu.png') {
+        hasil = 'kalah !!'
+      } else if (pilihanmusuh === '/img/gunting.png' && string === '/img/batu.png') {
+        hasil = 'menang'
+      } else if (pilihanmusuh === '/img/kertas.png' && string === '/img/gunting.png') {
+        hasil = 'menang'
+      } else if (pilihanmusuh === '/img/batu.png' && string === '/img/kertas.png') {
+        hasil = 'menang'
+      }
+      setTimeout(function () { alert(hasil); }, 500);
+      setTimeout(function () { location.replace("http://127.0.0.1:5500/index.html") }, 500);
+    }
+        // Tulis Kode javascript disini
+  </script>
+
 
 </body>
 

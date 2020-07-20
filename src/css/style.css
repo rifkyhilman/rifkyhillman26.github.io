@@ -1,9 +1,96 @@
-.hader {
-  background-image: url("https://images.unsplash.com/photo-1473654729523-203e25dfda10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+
+/* responsive phone */
+@media only screen and (min-width: 600px) {
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    color: whitesmoke;
+  }
+
+  #tampilan {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #suit {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
 }
 
-.logo {
-  border-radius: 300px;
-  height: 250px;
-  width: 250px;
+/* body */
+
+* {
+  background-color: black;
+}
+
+.judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: whitesmoke;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+#vs {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#tampilan {
+  display: flex;
+  justify-content: center;
+}
+
+#suit {
+  display: flex;
+  justify-content: center;
+}
+
+.gambar {
+  padding-bottom: 30px;
+  border-bottom: 5px solid white;
+}
+
+.gambar-kiri {
+  padding-left: 30px;
+  border-left: 5px solid white;
+}
+
+.gambar-kanan {
+  padding-right: 30px;
+  border-right: 5px solid white;
+}
+
+#gambar-tengah {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gambar:hover {
+  border-bottom: 5px solid blue;
+}
+
+.gambar-kiri:hover {
+  border-left: 5px solid	#50BFE6;
+}
+
+.gambar-kanan:hover {
+  border-right: 5px solid	#50BFE6;
 }
