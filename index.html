@@ -11,7 +11,7 @@
     <div class="judul">
       <h1>Rock Paper Scissors</h1>
     </div>
-    <div id="tampilan">
+    <div class="tampilan">
       <div class="box">
         <img id="computer" src="/img/tanya.png">
         <p>{Komputer}</p>
@@ -25,15 +25,22 @@
       </div>
     </div>
     <div id="suit">
-      <div class="gambar-kiri">
-        <img src="/img/batu.png" onclick="pilihansaya('/img/batu.png')">
+      <div>
+        <img class="gambar-kiri" src="/img/batu.png" onclick="pilihansaya('/img/batu.png')">
       </div>
       <div class="gambar">
         <img id="gambar-tengah" src="/img/gunting.png" onclick="pilihansaya('/img/gunting.png')">
       </div>
-      <div class="gambar-kanan">
-        <img src="/img/kertas.png" onclick="pilihansaya ('/img/kertas.png')">
+      <div>
+        <img class="gambar-kanan" src="/img/kertas.png" onclick="pilihansaya ('/img/kertas.png')">
       </div>
+    </div>
+    <div id="tombol">
+      <a href="./src/pages/gamedadu/index.html">
+        <div class="button">
+          Next
+        </div>
+      </a>
     </div>
   </div>
 

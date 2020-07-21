@@ -16,8 +16,8 @@
     color: whitesmoke;
   }
 
-  #tampilan {
-    margin-top: 100px;
+  .tampilan {
+    margin-top: 400px;
     display: flex;
     justify-content: center;
   }
@@ -25,13 +25,15 @@
   #suit {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 300px;
   }
 }
 
 /* body */
 
 * {
+  margin: 0;
+  padding: 0;
   background-color: black;
 }
 
@@ -40,7 +42,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  color: whitesmoke;
+  color: #fff;
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+  
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757,
+
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw   10vw #e50b0b;
 }
 
 img {
@@ -53,44 +65,86 @@ img {
   margin-right: 100px;
 }
 
-#tampilan {
+.tampilan {
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 
 #suit {
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  margin-top: 200px;
 }
 
 .gambar {
-  padding-bottom: 30px;
-  border-bottom: 5px solid white;
-}
-
-.gambar-kiri {
-  padding-left: 30px;
-  border-left: 5px solid white;
-}
-
-.gambar-kanan {
-  padding-right: 30px;
-  border-right: 5px solid white;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #gambar-tengah {
-  margin-left: 50px;
-  margin-right: 50px;
+  border-radius: 50%;
 }
 
-.gambar:hover {
-  border-bottom: 5px solid blue;
+.gambar-kiri {
+ border-radius: 50%;
+}
+
+.gambar-kanan {
+  border-radius: 50%;
+}
+
+#gambar-tengah:hover {
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
 }
 
 .gambar-kiri:hover {
-  border-left: 5px solid	#50BFE6;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
 }
 
 .gambar-kanan:hover {
-  border-right: 5px solid	#50BFE6;
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  width: 250px;
+  padding: 40px;
+  font-size: 35px;
+  color: #15f4ee;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  border: 5px solid #15f4ee;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 1.5s;
+}
+
+.button:hover {
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+#tombol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+#tombol a {
+  text-decoration: none;
+}
+
+
