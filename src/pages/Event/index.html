@@ -2,44 +2,11 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Gupter|Permanent+Marker&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Bebas+Neue|Bree+Serif|Cinzel|Gochi+Hand|Gupter|Permanent+Marker&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Event</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="foto">
-            <img src="/img/rifky.jpeg" />
-        </div>
-        <div id="Nama">
-            <h3>
-                M Rifky hilman
-            </h3>
-            <h4>
-                Web Developer
-            </h4>
-        </div>
-        <ul>
-            <li>
-                <a href="/index.html"><img src="/img/man.png" />About Me</a>
-            </li>
-            <li>
-                <a href="/src/pages/gamesuit/index.html"><img src="/img/gamepad.png" />Mini Game</a>
-            </li>
-            <li>
-                <a href="/src/pages/Event/index.html"><img src="/img/calendar.png" /> Event</a>
-            </li>
-            <li>
-                <a href="/src/pages/Aboute/index.html"><img src="/img/about.png" /> About</a>
-            </li>
-        </ul>
-    </div>
     <div class="body">
         <h1>TEST UMUR MU SEKARANG !</h1>
         <form onsubmit="submitForm()">
@@ -48,6 +15,12 @@
                     <input type="text" id="nama" name="name" autocomplete="off" required />
                     <label for="name" class="label-name">
                         <span class="content-name"> Nama </span>
+                    </label>
+                </div>
+                <div class="form">
+                    <input type="text" id="bulan" name="name" autocomplete="off" required />
+                    <label for="name" class="label-name">
+                        <span class="content-name"> Bulan </span>
                     </label>
                 </div>
                 <div class="form">
@@ -62,16 +35,7 @@
             </div>
         </form>
     </div>
-    <script>
-        function submitForm() {
-            var name = document.getElementById('nama').value;
-            var tahun = document.getElementById('tahun').value;
-            var Dates = new Date()
-            var Date_years = Dates.getFullYear()
-
-            alert("Halo " + name + ",sekarang kamu " + (Date_years - tahun) + " Tahun");
-        }
-    </script>
+    <script src="./submitFrom.js"></script>
 </body>
 
 </html>
