@@ -1,6 +1,6 @@
 
 /* responsive phone */
-@media only screen and (min-width: 60px) {
+@media only screen and (min-width: 600px) {
   img {
     width: 250px;
     height: 250px;
@@ -16,7 +16,15 @@
   }
 
   p {
-    font-size: 35px;
+    font-size: 50px;
+  }
+
+  .hati-kiri {
+    margin-left: 11%;
+  }
+
+  .hati-kanan {
+    margin-right: 8%;
   }
 }
 
@@ -45,9 +53,18 @@
 }
 
 p {
-  margin-top: 30px;
   color: #00b3ff;
   text-align: center;
+  font-weight: bold;
+}
+
+.nyawa img {
+  width: 50px;
+  height: 50px;
+}
+
+.nyawa {
+  margin-top: 50px;
 }
 
 img {
@@ -55,22 +72,24 @@ img {
   height: 150px;
 }
 
-#vs {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
 .tampilan {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  align-items: center;
+  margin-top: 5%;
 }
 
 #suit {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-top: 150px;
+  margin-top: 15%;
+}
+
+.box-tengah {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
 }
 
 .gambar {
