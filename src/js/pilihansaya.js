@@ -9,8 +9,8 @@ var nyawa6 = document.getElementById('hati6');
 var musuh = document.getElementById('computer');
 var saya = document.getElementById('you');
 var refresh = ['/img/tanya.png'];
-var rounde = document.createAttribute('h1');
-rounde.innerHTML = "Round2";
+var rounde = document.getElementById('judul');
+
 
 
 function berfungsi(pilihansaya) {
@@ -49,8 +49,10 @@ function berfungsi(pilihansaya) {
 
     if (hasil == "menang !!") {
         nyawa6.setAttribute('src', kalah);
+        rounde.innerHTML = "Round2";
     } else if (hasil == "kalah !!") {
         nyawa1.setAttribute('src', kalah);
+        rounde.innerHTML = "Round2";
     }
 
 }
