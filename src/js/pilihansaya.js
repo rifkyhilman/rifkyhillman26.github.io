@@ -10,6 +10,7 @@ var musuh = document.getElementById('computer');
 var saya = document.getElementById('you');
 var refresh = ['/img/tanya.png'];
 var rounde = document.createAttribute('h1');
+rounde.innerHTML = "Round2";
 
 
 function berfungsi(pilihansaya) {
