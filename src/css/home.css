@@ -65,7 +65,6 @@ p {
     letter-spacing: 15px;
     cursor: pointer;
     border-radius: 30px;
-    transition: 1.5s;
     text-shadow:     
     .1vw 0vw   0vw #BA01FF, .2vw 0vw   0vw #BA01FF, .4vw 0vw   0vw #BA01FF,
     .1vw 0vw  .1vw #BA01FF, .2vw 0vw  .1vw #BA01FF, .4vw 0vw  .1vw #BA01FF,
