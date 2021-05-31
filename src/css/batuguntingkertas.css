@@ -38,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
   color: #fff;
   text-shadow: 
   .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
@@ -76,14 +75,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
 }
 
 #suit {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 20%;
 }
 

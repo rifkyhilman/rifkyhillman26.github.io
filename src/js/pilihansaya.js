@@ -43,7 +43,11 @@ function berfungsi(pilihansaya) {
         hasil = "menang !!";
     }
 
-    setTimeout(function () { alert(hasil); }, 1000);
+    setTimeout(
+        function () { 
+            alert(hasil); 
+        }, 1000
+    );
     setTimeout(function () { musuh.setAttribute('src', refresh); }, 1000);
     setTimeout(function () { saya.setAttribute('src', refresh); }, 1000);
 
