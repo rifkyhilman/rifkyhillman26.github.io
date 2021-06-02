@@ -11,8 +11,9 @@ var saya = document.getElementById('you');
 var refresh = ['/img/tanya.png'];
 var rounde = document.getElementById('judul');
 var ronde = 0;
-var nyawah = [];
-
+var skorMusuh = [];
+var skorSaya = [];
+var skorNormal = [];
 
 function berfungsi(pilihansaya) {
     var random = Math.round(Math.random() * (suit.length - 1));
@@ -28,32 +29,32 @@ function berfungsi(pilihansaya) {
     else if (pilihanmusuh === '/img/batu.png' && pilihansaya === '/img/gunting.png') {
         hasil = "kalah !!";
         ronde = ronde + 1;
-        nyawah.push(3);
+        skorMusuh.push(0);
     }
     else if (pilihanmusuh === '/img/gunting.png' && pilihansaya === '/img/kertas.png') {
         hasil = "kalah !!";
         ronde = ronde + 1;
-        nyawah.push(5);
+        skorMusuh.push(0);
     }
     else if (pilihanmusuh === '/img/kertas.png' && pilihansaya === '/img/batu.png') {
         hasil = "kalah !!";
         ronde = ronde + 1;
-        nyawah.push(7);
+        skorMusuh.push(0);
     }
     else if (pilihanmusuh === '/img/gunting.png' && pilihansaya === '/img/batu.png') {
         hasil = "menang !!";
         ronde = ronde + 1;
-        nyawah.push(2);
+        skorSaya.push(1);
     }
     else if (pilihanmusuh === '/img/kertas.png' && pilihansaya === '/img/gunting.png') {
         hasil = "menang !!";
         ronde = ronde + 1;
-        nyawah.push(4);
+        skorSaya.push(1);
     }
     else if (pilihanmusuh === '/img/batu.png' && pilihansaya === '/img/kertas.png') {
         hasil = "menang !!";
         ronde = ronde + 1;
-        nyawah.push(6);
+        skorSaya.push(1);
     }
 
     setTimeout(
@@ -62,41 +63,60 @@ function berfungsi(pilihansaya) {
         }, 1000
     );
 
+    if (skorNormal[0] == 1) {
+        skorSaya.push(1);
+    } else {
+        skorMusuh.push(1);
+    }
+
     switch (ronde) {
         case 1:
-            if (nyawah[0] == 2 || nyawah[0] == 4) {
+            if (skorSaya[0] == 1) {
                 nyawa6.setAttribute('src', lose);
                 rounde.innerHTML = "Round2";
-            } else if (nyawah[0] == 6) {
-                nyawa6.setAttribute('src', lose);
-                rounde.innerHTML = "Round2";
-            } else {
+                skorMusuh.push(0);
+            } else if (skorMusuh[0] == 1) {
                 nyawa1.setAttribute('src', lose);
                 rounde.innerHTML = "Round2";
+                skorSaya.push(0);
             }
             break;
         case 2:
-            if (nyawah[1] == 2 || nyawah[1] == 4) {
+            if (skorSaya[1] == 1 && skorMusuh[0] == 0) {
                 nyawa5.setAttribute('src', lose);
-                rounde.innerHTML = "Round3";
-            } else if (nyawah[1] == 6) {
-                nyawa5.setAttribute('src', lose);
-                rounde.innerHTML = "Round3";
-            } else {
+                rounde.innerHTML = "Round2";
+                skorMusuh.push[0]
+            } else if (skorSaya[1] == 1 && skorMusuh[0] == 1) {
+                nyawa6.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorMusuh.push[0]
+            } else if (skorMusuh[1] == 1 && skorSaya[0] == 0) {
                 nyawa2.setAttribute('src', lose);
-                rounde.innerHTML = "Round3";
+                rounde.innerHTML = "Round2";
+                skorSaya.push[0]
+            } else if (skorMusuh[1] == 1 && skorSaya[0] == 1) {
+                nyawa1.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorSaya.push[0]
             }
             break;
         case 3:
-            if (nyawah[2] == 2 || nyawah[2] == 4) {
-                nyawa4.setAttribute('src', lose);
-                rounde.innerHTML = "Round4";
-            } else if (nyawah[2] == 6) {
-                nyawa4.setAttribute('src', lose);
-                rounde.innerHTML = "Round4";
-            } else {
-                nyawa3.setAttribute('src', lose);
-                rounde.innerHTML = "Round4";
+            if (skorSaya[2] == 1 && skorMusuh[0] == 0) {
+                nyawa5.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorMusuh.push[0]
+            } else if (skorSaya[1] == 1 && skorMusuh[0] == 1) {
+                nyawa6.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorMusuh.push[0]
+            } else if (skorMusuh[1] == 1 && skorSaya[0] == 0) {
+                nyawa2.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorSaya.push[0]
+            } else if (skorMusuh[1] == 1 && skorSaya[0] == 1) {
+                nyawa1.setAttribute('src', lose);
+                rounde.innerHTML = "Round2";
+                skorSaya.push[0]
             }
             break;
         case 4:
